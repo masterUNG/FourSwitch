@@ -1,16 +1,34 @@
 package appewtc.masterung.fourswitch;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ToggleButton;
 
-public class MainActivity extends AppCompatActivity {
+import ioio.lib.util.android.IOIOActivity;
+
+public class MainActivity extends IOIOActivity {
+
+    //Explicit
+    private ToggleButton firstToggleButton, secondToggleButton,
+            thirdToggleButton, forthToggleButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Bind Widget
+        bindWidget();
+
+
+    }   // onCreate
+
+    private void bindWidget() {
+
+        firstToggleButton = (ToggleButton) findViewById(R.id.toggleButton);
+
     }
 
     @Override
@@ -34,4 +52,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+}   // Main Class
