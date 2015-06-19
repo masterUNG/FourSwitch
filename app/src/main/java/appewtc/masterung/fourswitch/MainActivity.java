@@ -42,9 +42,9 @@ public class MainActivity extends IOIOActivity {
 
             //Assign Signal to pin
             firstDigitalOutput = ioio_.openDigitalOutput(1, false);
-            secondDigitalOutput = ioio_.openDigitalOutput(3, false);
-            thirdDigitalOutput = ioio_.openDigitalOutput(5, false);
-            fourthDigitalOutput = ioio_.openDigitalOutput(7, false);
+            secondDigitalOutput = ioio_.openDigitalOutput(2, false);
+            thirdDigitalOutput = ioio_.openDigitalOutput(3, false);
+            fourthDigitalOutput = ioio_.openDigitalOutput(4, false);
 
             //ตรวจสอบว่า เชื่อมต่อกับ IOIO Board หรือยัง?
             runOnUiThread(new Runnable() {
